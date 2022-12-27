@@ -5,6 +5,6 @@ class ItemsController < ApplicationController
   end
   
   def show
-    binding.pry
+    @item = ItemFacade.find_item(params[:item_id])
   end
 end
